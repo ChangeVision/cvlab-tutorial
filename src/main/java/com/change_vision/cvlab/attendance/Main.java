@@ -8,5 +8,6 @@ public class Main {
         frame.setSize(500,500);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame.setVisible(true);
+
     }
 }
