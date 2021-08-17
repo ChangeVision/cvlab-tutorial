@@ -29,6 +29,15 @@ public class AttendanceModel {
     }
 
     public int getWorkingHours() {
-        return ringoutDate.getHours() - ringinDate.getHours();
+        return ringoutDate.getSeconds() - ringinDate.getSeconds();
+    }
+
+    @Override
+    public String toString() {
+        return userModel.getName()+", "+
+                ringinDate+" - "+
+                ringoutDate+ "("+
+                getWorkingHours()+")";
     }
 }
+
